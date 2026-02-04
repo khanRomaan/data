@@ -1,3 +1,14 @@
+import sys
+import os
+
+# Add the root folder to Python path
+sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), "..")))
+from ai_analyzer.data_loader import load_data
+from ai_analyzer.data_cleaner import handle_missing_values
+from ai_analyzer.profiler import profile_data
+from ai_analyzer.stats_analyzer import compute_statistics
+from ai_analyzer.anomaly_detector import detect_anomalies
+from ai_analyzer.insight_generator import generate_insights
 
 import sys
 sys.path.append("/content/AI-Data-Analyzer-App")
